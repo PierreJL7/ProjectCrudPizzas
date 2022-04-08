@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/a3138e5847.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./img/favicon.png">
 </head>
 <body>
-    <header class="header" id="header">
-        <nav class="header-nav" >
-            <a href="index.html" class="logo nav-link">Don Pierre</a>
+    <header class="header" id="header"> 
+        <nav class="header-nav" id="header-nav">
+            <a href="index.html" class="logo"><img class="logo-siu" src="./img/logo_small.png" alt="logo"></a>
             <button class="nav-toggle">
                 <i class="fas fa-bars"></i>
             </button>
@@ -36,10 +36,23 @@
                 </li>
             </ul>
         </nav>
+         <div class="container-slider">
+             <div class="slider" id="slider">
+                <div class="slider__section">
+                    <img src="./img/banner-1.png" alt="banner 1" class="slider__img">
+                </div>
+                <div class="slider__section">
+                    <img src="./img/banner-2.png" alt="banner 2" class="slider__img">
+                </div>
+                <div class="slider__section">
+                    <img src="./img/banner-3.png" alt="banner 3" class="slider__img">
+                </div>
+             </div>
+             <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+             <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+        </div>
     </header>
-    <div class="container_img_banner">
-    <img class="img_banner" src="./img/Pizzería Don Pierre.png" alt="">
-    </div>
+    <main class="main">
     <div class="h1-container">
     <h1 class="h1_descripcion">Lo mas pedido por nuestros clientes</h1>  
     </div>
@@ -64,14 +77,15 @@
                     <a href="#">Solicitar promoción</a>
                 </div>
             </section>
-           </main> 
-        <article class="iframe">
-            <div class="iframe-container">
-                <h2 class="iframe__title">Somos expertos en sabor</h2>
-            </div>
-            <iframe class="iframe__video" width="560" height="315" src="https://www.youtube.com/embed/ywrLSeDVH5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <form action=""></form>
-        </article>
+        </main> 
+            <article class="iframe">
+                <div class="iframe-container">
+                    <h2 class="iframe__title">Somos expertos en sabor</h2>
+                </div>
+                <iframe class="iframe__video" width="560" height="315" src="https://www.youtube.com/embed/ywrLSeDVH5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <form action=""></form>
+            </article>
+        </main>
         <footer class="footer">
             <div class="social">
                 <a href="#" class="fab fa-instagram"></a>
@@ -90,6 +104,6 @@
                 Pizzeria Don Pierre @ 2021
             </p>
         </footer>
-<script src="./javascript/app.js"></script>
+<script defer src="./javascript/app.js"></script>
 </body>
 </html>

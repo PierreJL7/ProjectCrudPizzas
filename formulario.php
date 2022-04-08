@@ -1,5 +1,11 @@
 <?php
 
+ if (isset($_POST['submit'])){
+    $Codigo = $_POST['Codigo'];
+    $Nombre = $_POST['Nombre'];
+    $Precio = $_POST['Precio'];
+} 
+
 $conexion = mysqli_connect("127.0.0.1","root","12345678","BDSistemaIntegrado",3307);
 
 $host="127.0.0.1";

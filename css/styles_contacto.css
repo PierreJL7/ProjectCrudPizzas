@@ -1,81 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
-.body_color {
-    background: lemonchiffon;
+body {
+    background-color: floralwhite;
     width: 100%;
-    height: 100vh;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Lexend Deca', sans-serif;
-    font-family: 'Secular One', sans-serif;
+    font-family: 'Kanit', sans-serif;
     padding: 54px 0px 0;
+    height: 100vh;
+    min-height: 100vh;
 }
 
-
 .header{
-    background-image: linear-gradient(to top right, #FDC830,#F37335);
-    height: 54px;
+    width: 100%;
+
+}
+
+.header-nav{
+    background-color: floralwhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
     position: fixed;
+    height: 54px;
     width: 100%;
     top: 0;
     left: 0;
+    transition: all 0.5s;
+    margin-bottom: 10px;
+
 }
+
+#header-nav{
+    z-index: 2;
+}
+
 
 
 .nav-link{
     text-decoration: none;
-    color: azure;
+    color: black;
 }
 
 .logo{
-    color: azure;
+/*     color: azure; */
     text-decoration: none;
-    font-size: 30px;
-    font-weight: bold;
+    margin-left: 200px;
+    margin-top: 0.5rem;
+
 }
 
-.header-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-    height: 100%;
+.logo-siu{
+    width: 160px;
 }
+
 
 .nav-menu{
     display: flex;
     list-style: none;
-    height: 50px;
+    margin-right: 200px;
+    margin-top: 20px;
 }
+
+
 
 .nav-menu-item{
     font-size: 18px;
     margin:0 10px;
-    line-height: 20px;
     text-transform: uppercase;
     width: max-content;
-    align-items: center;
-    margin-top: 15px;
 }
 
 
 
 .nav-menu-link{
-    color: azure;
+    color: black;
     text-decoration: none;
     padding: 8px 12px;
     transition: all 0.5s;
     border-radius: 6px;
-    
 }
 
 .nav-menu-link:hover{
-    background-color: mediumvioletred;
+    background-color: black;
+    color: #F8F9F9;
 }
+
 
 .nav-toggle {
     color: white;
@@ -87,6 +101,8 @@
     cursor: pointer;
     display: none;
 }
+
+/* Contacto form */
 
 .container_contact{
     background: linear-gradient(rgba(5,7,12,0.50), rgba(5,7,12,0.50)), url(../img/img_carrusel4.jpg);
@@ -208,15 +224,30 @@
 
 @media (max-width: 850px){
 
-    
     .logo{
         font-size: 25px;
         padding: 0 20px;
-        line-height: 60px;
+        margin-left: 10px;
+        margin-bottom: 15px;
     }
 
+    .logo-siu{
+        width: 140px;
+    }
+    
+    
+    .header{
+        width: 100%;
+    }
+    
     #header{
         z-index: 1;
+    }
+
+    .header-nav{
+        height: 50px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     
     
@@ -226,7 +257,7 @@
         margin-right: 0;
         background-color: black;
         position: fixed;
-        top: 52px;
+        top: 30px;
         width: 100%;
         padding: 20px 10px;
         height: calc(100% - 60px); 
@@ -236,16 +267,38 @@
         height: 100%;
     }
 
+    .nav-menu-link{
+        color: white;
+        text-decoration: none;
+        padding: 8px 12px;
+        transition: all 0.5s;
+        border-radius: 6px;
+    }
+
     .nav-menu-item{
-        line-height: 120px;
+        font-size: 18px;
+        margin:0 10px;
+        line-height: 50px;
+        text-transform: uppercase;
+        width: max-content;
     }
     
     .nav-toggle{
         display: block;
+        margin-top: 5px;
+        color: black;
+        z-index: 1000;
+        padding: 0 25px;
     }
 
     .nav-menu_visible{
         left: 0;
+        
+    }
+
+    .nav-visible{
+        z-index: 1000;
+        width: 100%;
     }
 
     /*form responsive*/

@@ -1,10 +1,3 @@
-<?php
-if (isset($_POST['submit'])){
-    $Codigo = $_POST['Codigo'];
-    $Nombre = $_POST['Nombre'];
-    $Precio = $_POST['Precio'];
-}
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -23,12 +16,12 @@ if (isset($_POST['submit'])){
 </head>
 <body class="body_color">
     <header class="header" id="header">
-        <nav class="header-nav" >
-            <a href="index.html" class="logo nav-link">Don Pierre</a>
+        <nav class="header-nav nav-visible" >
+            <a href="index.html" class="logo"><img class="logo-siu" src="./img/logo_small.png" alt="logo"></a>
             <button class="nav-toggle">
                 <i class="fas fa-bars"></i>
             </button>
-            <ul class="nav-menu">
+            <ul class="nav-menu ">
                 <li class="nav-menu-item">
                     <a href="index.html"  class="nav-menu-link nav-link">Inicio</a>
                 </li>
